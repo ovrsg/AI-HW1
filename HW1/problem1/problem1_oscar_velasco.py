@@ -1,5 +1,5 @@
 import collections
-
+import math
 ############################################################
 # Problem 1a - 1 points
 
@@ -11,7 +11,8 @@ def getMaxLengthWord(text):
     You might find max() and list comprehensions handy here.
     """
     # BEGIN_YOUR_CODE (around 1 line of code expected)
-    raise Exception("Not implemented yet")
+    #raise Exception("Not implemented yet")
+	return max(max(text.split(" "),key = len))[0]
     # END_YOUR_CODE
 
 ############################################################
@@ -23,7 +24,9 @@ def manhattanDistance(loc1, loc2):
     are pairs of numbers (e.g., (3, 5)).
     """
     # BEGIN_YOUR_CODE (around 1 line of code expected)
-    raise Exception("Not implemented yet")
+    #raise Exception("Not implemented yet")
+	
+	return sqrt((loc2[0]-loc1[0])**2+(loc2[1]+loc1[1])**2)
     # END_YOUR_CODE
 
 
