@@ -12,10 +12,10 @@ def getMaxLengthWord(text):
     """
     # BEGIN_YOUR_CODE (around 1 line of code expected)
     #raise Exception("Not implemented yet")
-	return max(max(text.split(" "),key = len))[0]
+    return max(sort(text.split(" "),reverse= True),key = len)
     # END_YOUR_CODE
 
-############################################################
+###########################################################
 # Problem 1b - 1 points
 
 def manhattanDistance(loc1, loc2):
@@ -26,7 +26,7 @@ def manhattanDistance(loc1, loc2):
     # BEGIN_YOUR_CODE (around 1 line of code expected)
     #raise Exception("Not implemented yet")
 	
-	return sqrt((loc2[0]-loc1[0])**2+(loc2[1]+loc1[1])**2)
+    return math.sqrt((loc2[0]-loc1[0])**2+(loc2[1]+loc1[1])**2)
     # END_YOUR_CODE
 
 
@@ -88,3 +88,7 @@ def computeLongestPalindrome(text):
     # END_YOUR_CODE
 
 ############################################################
+
+print(getMaxLengthWord("We are Testing this Strings "))
+print(manhattanDistance([2,3],[2,4]))
+
